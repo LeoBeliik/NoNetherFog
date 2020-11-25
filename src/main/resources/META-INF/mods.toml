@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[35,)"
+license= "GNU LESSER GENERAL PUBLIC LICENSE"
+licenseURL= "pending"
+#issueTrackerURL="pending"
+[[mods]]
+modId="nonetherfog"
+version="${file.jarVersion}"
+displayName="No Nether Fog"
+#displayURL="pending"
+authors="LeoBeliik"
+#logoFile="esm_logo.png"
+description='''
+This mod disables the fog in the nether.
+It also adds a zoom key.
+'''
+[[dependencies.extremeSoundMuffler]]
+modId="forge"
+mandatory=true
+versionRange="[35,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.extremeSoundMuffler]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.4]"
+ordering="NONE"
+side="BOTH"
