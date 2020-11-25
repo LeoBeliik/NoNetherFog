@@ -2,6 +2,5 @@
     "pack": {
         "description": "No nether fog resources",
         "pack_format": 6,
-        "_comment": "Pack for noNetherFog"
     }
 }
