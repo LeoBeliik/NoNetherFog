@@ -40,7 +40,10 @@ public class NoNetherFog {
     @SubscribeEvent
     @OnlyIn(Dist.CLIENT)
     public void onRenderFog(EntityViewRenderEvent.FogDensity event) {
-        if (event.getInfo().getRenderViewEntity().world.getDimensionKey().getLocation().getPath().equals("the_nether")) {
+        boolean isNether = event.getInfo().getRenderViewEntity().world.getDimensionKey().getLocation().getPath().equals("the_nether");
+        boolean isAir = event.getInfo().getFluidState().toString().contains("EmptyFluid");
+
+        if (isNether && isAir) {
             event.setDensity(0.005F);
             event.setCanceled(true);
         }
@@ -60,7 +63,8 @@ public class NoNetherFog {
 
     @SubscribeEvent
     @OnlyIn(Dist.CLIENT)
-    public void onKeyInput(InputEvent.KeyInputEvent event) {}
+    public void onKeyInput(InputEvent.KeyInputEvent event) {
+    }
 
     @SubscribeEvent
     @OnlyIn(Dist.CLIENT)

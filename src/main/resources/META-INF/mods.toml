@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[35,)"
+loaderVersion="[34,)"
 license= "GNU LESSER GENERAL PUBLIC LICENSE"
 licenseURL= "https://github.com/LeoBeliik/NoNetherFog/blob/master/LICENSE.txt"
 issueTrackerURL="https://github.com/LeoBeliik/NoNetherFog/issues"
@@ -9,7 +9,7 @@ version="${file.jarVersion}"
 displayName="No Nether Fog"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/no-nether-fog"
 authors="LeoBeliik"
-logoFile="nonf_logo.png"
+logoFile="nonf_icon.png"
 description='''
 This mod disables the fog in the nether.
 It also adds a zoom key.
@@ -17,12 +17,12 @@ It also adds a zoom key.
 [[dependencies.nonetherfog]]
 modId="forge"
 mandatory=true
-versionRange="[35,)"
+versionRange="[34,)"
 ordering="NONE"
 side="BOTH"
 [[dependencies.nonetherfog]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.16.4]"
+versionRange="[1.16.3)"
 ordering="NONE"
 side="BOTH"
